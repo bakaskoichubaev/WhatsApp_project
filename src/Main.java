@@ -47,7 +47,7 @@ public class Main {
                     System.out.print("ID : ");
                     int id2 = scanner.nextInt();
                     String n11 = scanner.nextLine();
-                    System.out.print("UZER NAME : ");
+                    System.out.print("USER NAME : ");
                     String whatsappName = scanner.nextLine();
                     System.out.print("PHONE NUMBER :1 ");
                     String phoneNumber = scanner.nextLine();
@@ -75,11 +75,24 @@ public class Main {
                     String nn5 = scanner.nextLine();
                     System.out.print("PASSWORD : ");
                     String password4 = scanner.nextLine();
-                    System.out.print("UZER NAME : ");
+                    System.out.print("USER NAME : ");
                     String uz = scanner.nextLine();
-                    System.out.print("MASSEGE : ");
-                    String massege = scanner.nextLine();
-                    System.out.println(whatsappUserServices.getMassage(password4, uz, massege, whatsappUserServices.getWhatsappUser(),whatsappUserServices.getWhatsappUser()));
+                    System.out.print("MESSAGE : ");
+                    String message = scanner.nextLine();
+                    System.out.println(whatsappUserServices.getMassage(password4, uz, message, whatsappUserServices.getWhatsappUser(),whatsappUserServices.getWhatsappUser()));
+                    break;
+                case 8:
+                    String nom  = scanner.nextLine();
+                    System.out.println("passport ID : ");
+                    String passport  = scanner.nextLine();
+                    System.out.println("phoneNumber:  ");
+                    String phone_number = scanner.nextLine();
+                    System.out.println("password: ");
+                    String passw = scanner.nextLine();
+                    System.out.println("userName:   ");
+                    String name = scanner.nextLine();
+                    System.out.println(whatsappUserServices.getMassage(passport, phone_number, passw, name, whatsappUserServices.getWhatsappUser(),whatsappUserServices.getWhatsappUser()));
+
 
 
             }
